@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <title>LEE's show</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+    }
+    canvas {
+      background: #129ce7;
+      display:block;
+      width:calc(100%);
+      height:calc(100vh);
+    }
+  </style>
+
+</head>
+<body>
+  <canvas id="myShape"></canvas>
+  <p style="visibility:hidden;">
+    <a href="http://www.baibu.com"></a>
+  </p>
+</body>
+</html>
+<script src="js/shape-shifter.js"></script>
+<script>
+    let shapeShifter = S;
+    window.onload=function(){
+        //shapeShifter.init(document.getElementById('myShape'),'任意内容|#countdown 6');
+        shapeShifter.init(document.getElementById('myShape'),'Lee|Show|Time|will start|#countdown 3|( ఠൠఠ )ﾉ|⚡|');
+        setTimeout(() => {
+            shapeShifter.UI.reset()
+        }, 20000);
+    }
+</script>
